@@ -14,7 +14,7 @@ const PROJECTS = [
     features: ["Óxidos, hidruros, hidróxidos, ácidos y sales", "Nomenclatura tradicional, Stock y sistemática", "Iones y ecuaciones con balanceo automático", "Juegos, retos y modo estudiante con puntaje"] },
   { title: "Calculadora trigonométrica", drive: "", shots: ["img/trigonometria-1.png", "img/trigonometria-2.png"], cat: "Educación", tags: ["Python", "Tkinter"], icon: "fa-square-root-variable", color: "green",
     desc: "Programa con interfaz gráfica que calcula ángulos del triángulo rectángulo y dibuja el triángulo con sus medidas.",
-    features: ["Cálculo de ángulos con seno, coseno y tangente", "Dibujo del triángulo según sus medidas reales", "Selección del ángulo a analizar"] },
+    features: ["Cálculo de ángulos con seno, coseno y tangente", "Dibujo del triángulo según sus medidas reales", "Selección del ángulo a analizar","Descargalo"] },
   { title: "Punto de venta Corralón FLIA", drive: "", shots: ["img/corralon-1.png", "img/corralon-2.png"], cat: "Escritorio", tags: ["Python", "Tkinter"], icon: "fa-cash-register", color: "teal",
     desc: "Sistema de punto de venta para un corralón, con interfaz adaptable al tamaño de la pantalla.",
     features: ["Inicio de sesión y administración", "Ventas, inventario con tarjetas de productos y clientes", "Facturas y datos del negocio"] },
