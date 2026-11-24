@@ -27,7 +27,7 @@ const PROJECTS = [
   apk: "https://www.mediafire.com/file/4ialto2njwn64o8/InventarioLab.apk/file",
   shots: [
     "img/inventario-1.png",
-    "img/inventario-2.png"
+    "img/inventario-2.jpg"
   ],
     
   cat: "Móvil",
