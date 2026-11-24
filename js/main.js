@@ -29,6 +29,7 @@ const PROJECTS = [
     "img/inventario-1.png",
     "img/inventario-2.png"
   ],
+    
   cat: "Móvil",
   tags: ["Python", "Tkinter", "Android", "Inventario"],
   icon: "fa-flask",
