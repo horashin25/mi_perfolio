@@ -22,17 +22,48 @@ const PROJECTS = [
     desc: "Sistema de preguntas y respuestas en tiempo real: el administrador controla la sala desde escritorio y los jugadores responden desde el navegador.",
     features: ["Panel de administrador de escritorio con login", "Vista web para jugadores en tiempo real", "Cupo de jugadores y cronómetro por pregunta", "Puntajes y resultados finales"] },
 
-  { title: "Inventario laboratorio", drive: "https://www.mediafire.com/file/4ialto2njwn64o8/InventarioLab.apk/file", shots: ["img/preguntas-1.png", "img/preguntas-2.png"], cat: "Web", tags: ["Flask", "Socket.IO", "Tkinter"], icon: "fa-circle-question", color: "pink",
-    desc: "Sistema de un inventario de elemnto y reactivos quimicos de un laboratorio quimico, para llevar mojor el control en su laboratorio ",
-    features: ["Cargar datos de cada elemento", "Cargar las imagenes para una mejor visualización", "Programa de escritorio para cargar los reactivos o elementos", "Aplicacion movil para visulizar los elemntos cargados"] }
+  {
+  title: "Inventario laboratorio",
+  apk: "https://www.mediafire.com/file/4ialto2njwn64o8/InventarioLab.apk/file",
+  shots: [
+    "img/inventario-1.png",
+    "img/inventario-2.png"
+  ],
+  cat: "Móvil",
+  tags: ["Python", "Tkinter", "Android", "Inventario"],
+  icon: "fa-flask",
+  color: "teal",
+
+  desc: "Sistema de gestión de inventario para laboratorios químicos, que permite registrar, organizar y consultar elementos y reactivos.",
+
+  features: [
+    "Registro de elementos y reactivos químicos",
+    "Carga de imágenes para identificar los productos",
+    "Programa de escritorio para administrar el inventario",
+    "Aplicación móvil para visualizar los elementos registrados",
+    "Control y organización de los materiales del laboratorio",
+    "Descargalo y probalo !!!"
+  ]
+}
 ];
 
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 // Botones de descarga: aparecen solo si el proyecto tiene enlace (drive, apk o store)
 const dlButtons = (p, cls) => [
-  p.drive && `<a class="${cls}" href="${esc(p.drive)}" target="_blank" rel="noopener"><i class="fa-brands fa-google-drive me-1"></i> Descargar app (Drive)</a>`,
-  p.apk && `<a class="${cls}" href="${esc(p.apk)}" download><i class="fa-solid fa-download me-1"></i> Descargar APK</a>`
+  p.drive && `
+    <a class="${cls}" href="${esc(p.drive)}"
+       target="_blank" rel="noopener">
+       <i class="fa-brands fa-google-drive me-1"></i>
+       Descargar desde Drive
+    </a>`,
+
+  p.apk && `
+    <a class="${cls}" href="${esc(p.apk)}"
+       target="_blank" rel="noopener">
+       <i class="fa-solid fa-download me-1"></i>
+       Descargar APK
+    </a>`
 ].filter(Boolean).join("");
 
 document.addEventListener("DOMContentLoaded", () => {
