@@ -20,7 +20,11 @@ const PROJECTS = [
     features: ["Inicio de sesión y administración", "Ventas, inventario con tarjetas de productos y clientes", "Facturas y datos del negocio"] },
   { title: "Preguntas en vivo", drive: "", shots: ["img/preguntas-1.png", "img/preguntas-2.png"], cat: "Web", tags: ["Flask", "Socket.IO", "Tkinter"], icon: "fa-circle-question", color: "pink",
     desc: "Sistema de preguntas y respuestas en tiempo real: el administrador controla la sala desde escritorio y los jugadores responden desde el navegador.",
-    features: ["Panel de administrador de escritorio con login", "Vista web para jugadores en tiempo real", "Cupo de jugadores y cronómetro por pregunta", "Puntajes y resultados finales"] }
+    features: ["Panel de administrador de escritorio con login", "Vista web para jugadores en tiempo real", "Cupo de jugadores y cronómetro por pregunta", "Puntajes y resultados finales"] },
+
+  { title: "Inventario laboratorio", drive: "https://www.mediafire.com/file/4ialto2njwn64o8/InventarioLab.apk/file", shots: ["img/preguntas-1.png", "img/preguntas-2.png"], cat: "Web", tags: ["Flask", "Socket.IO", "Tkinter"], icon: "fa-circle-question", color: "pink",
+    desc: "Sistema de un inventario de elemnto y reactivos quimicos de un laboratorio quimico, para llevar mojor el control en su laboratorio ",
+    features: ["Cargar datos de cada elemento", "Cargar las imagenes para una mejor visualización", "Programa de escritorio para cargar los reactivos o elementos", "Aplicacion movil para visulizar los elemntos cargados"] }
 ];
 
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
