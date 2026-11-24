@@ -24,7 +24,7 @@ const PROJECTS = [
 
   {
   title: "Inventario laboratorio",
-  apk: "https://www.mediafire.com/file/4ialto2njwn64o8/InventarioLab.apk/file",
+  apk: "https://www.mediafire.com/file/azmy3rira94ha8o/InventarioLab.apk/file",
   shots: [
     "img/inventario-1.png",
     "img/inventario-2.png"
